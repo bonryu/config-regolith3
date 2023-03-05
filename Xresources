@@ -1,0 +1,10 @@
+i3-wm.bar.position: bottom
+i3-wm.window.border.size: 3
+i3-wm.gaps.inner.size: 10
+regolith.wallpaper.file: /usr/share/backgrounds/warty-final-ubuntu.png
+regolith.wallpaper.options: zoom
+regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/warty-final-ubuntu.png
+regolith.lockscreen.wallpaper.options: zoom
+
+!regolith.look.path: /usr/share/regolith-look/default
+regolith.look.path: /usr/share/regolith-look/default
