@@ -17,6 +17,12 @@ set_from_resource $output2 i3.output.2.name	HDMI-2  #DP-1 #output0
 # set_from_resource $third i3.output.third None
 
 # Automatically putting workspaces on specific screens
+# Use as many outputs as we have defined. So if we only have two displays.
+# E.g. a dual monitor desktop setup, then we would get rid of the column that looks like
+#  $output2
+#  ...
+#  $output3
+# because we would have no output3.
 workspace 1     output $output2 $output1
 workspace 2     output $output2 $output1
 workspace 3     output $output2 $output1
