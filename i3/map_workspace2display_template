@@ -1,7 +1,12 @@
 # Xresources settings
+# T460 laptop setup at home
 set_from_resource $output1 i3.output.1.name     eDP-1
 set_from_resource $output2 i3.output.2.name     DP-2-1 # $output0
 set_from_resource $output3 i3.output.2.name     DP-2-2 # $output1
+
+# home desktop setup
+set_from_resource $output1 i3.output.1.name	DP-1  #HDMI-2
+set_from_resource $output2 i3.output.2.name	HDMI-2  #DP-1 #output0
 
 # set_from_resource $output1 i3.output.1.name     eDP-1
 # set_from_resource $output2 i3.output.2.name     DP-2-1 # $output0
