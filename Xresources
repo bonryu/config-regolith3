@@ -5,6 +5,8 @@ regolith.wallpaper.file: /usr/share/backgrounds/warty-final-ubuntu.png
 regolith.wallpaper.options: zoom
 regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/warty-final-ubuntu.png
 regolith.lockscreen.wallpaper.options: zoom
-
-!regolith.look.path: /usr/share/regolith-look/default
+i3-wm.binding.look_selector: m
 regolith.look.path: /usr/share/regolith-look/default
+
+i3xrocks.weather.location: pickering
+
