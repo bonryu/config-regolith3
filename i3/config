@@ -174,19 +174,38 @@ bindsym $mod+Ctrl+$ws10_key workspace number $ws20
 
 include $HOME/.config/regolith2/i3/map_workspace2display
 
+## Navigate // focus to another screen
+bindsym $mod+$alt+j focus output down
+bindsym $mod+$alt+k focus output up
+bindsym $mod+$alt+h focus output left
+bindsym $mod+$alt+l focus output right
+# bindsym $mod+$alt+< focus previous output
 
 ## Modify // Carry focused container to another screen
-bindsym $mod+$alt+j move container to output down; focus output down
-bindsym $mod+$alt+k move container to output up; focus output up
+bindsym $mod+$alt+Shift+j move container to output down; focus output down
+bindsym $mod+$alt+Shift+k move container to output up; focus output up
+bindsym $mod+$alt+Shift+h move container to output left; focus output left
+bindsym $mod+$alt+Shift+l move container to output right; focus output right
 
 ## Modify // Move Window to Workspace 11 - 19// <><Ctrl><Shift> 1..9 ##
 bindsym $mod+Shift+Ctrl+$ws10_key move container to workspace number $ws20
 
 # move focused container to workspace, move to workspace
 ## Modify // Carry Window to Workspace 11 - 19 // <><Alt><Ctrl> 1..9 ##
-bindsym $mod+$alt+Ctrl+$ws0_key move container to workspace number $ws20; workspace number $ws20
+bindsym $mod+$alt+Ctrl+$ws10_key move container to workspace number $ws20; workspace number $ws20
+
+# Modify // move focused container to next work space, move to workspace
+bindsym $mod+$alt+Ctrl+l move container to workspace next; workspace next
+# Modify // move focused container to prev work space, move to workspace
+bindsym $mod+$alt+Ctrl+h move container to workspace prev; workspace prev
 
 # Session Management bindings customizations
 set_from_resource $i3-wm.binding.exit_app i3-wm.binding.exit_app Ctrl+c
 bindsym $mod+$i3-wm.binding.exit_app [con_id="__focused__"] kill
+
+# Fix for tablet buttons not working in regolith2
+bindsym $alt+Ctrl+Shift+m exec /home/bonryu/scripts/bin/switchmonitors.sh
+bindsym $alt+Ctrl+Shift+x exec /home/bonryu/scripts/bin/xsetwacom.sh
+exec_always /home/bonryu/scripts/bin/xsetwacom.sh
+
 
