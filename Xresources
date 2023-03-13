@@ -1,0 +1,26 @@
+i3-wm.bar.position: bottom
+i3-wm.window.border.size: 3
+i3-wm.gaps.inner.size: 10
+regolith.wallpaper.file: /usr/share/backgrounds/warty-final-ubuntu.png
+regolith.wallpaper.options: zoom
+regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/warty-final-ubuntu.png
+regolith.lockscreen.wallpaper.options: zoom
+i3-wm.binding.look_selector: m
+!regolith.look.path: /usr/share/regolith-look/default
+!regolith.look.path: /usr/share/regolith-look/nord
+!regolith.look.path: /usr/share/regolith-look/solarized-dark
+!regolith.look.path: /usr/share/regolith-look/default
+!regolith.look.path: /usr/share/regolith-look/blackhole
+!regolith.look.path: /usr/share/regolith-look/gruvbox
+!regolith.look.path: /usr/share/regolith-look/nord
+!regolith.look.path: /usr/share/regolith-look/gruvbox
+!regolith.look.path: /usr/share/regolith-look/gruvbox
+!regolith.look.path: /usr/share/regolith-look/nord
+!regolith.look.path: /usr/share/regolith-look/gruvbox
+!regolith.look.path: /usr/share/regolith-look/default
+!regolith.look.path: /usr/share/regolith-look/default
+!regolith.look.path: /usr/share/regolith-look/default
+regolith.look.path: /usr/share/regolith-look/default
+
+i3xrocks.weather.location: pickering
+

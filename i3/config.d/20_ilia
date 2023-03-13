@@ -1,0 +1,2 @@
+## Launch // Look Selector // <><Alt> l ##
+set_from_resource $i3-wm.binding.look_selector i3-wm.binding.look_selector m
