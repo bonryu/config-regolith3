@@ -8,10 +8,6 @@ set_from_resource $output3 i3.output.2.name     DP-2-2 # $output1
 set_from_resource $output1 i3.output.1.name	DP-1  #HDMI-2
 set_from_resource $output2 i3.output.2.name	HDMI-2  #DP-1 #output0
 
-# set_from_resource $output1 i3.output.1.name     eDP-1
-# set_from_resource $output2 i3.output.2.name     DP-2-1 # $output0
-# set_from_resource $output3 i3.output.2.name     DP-2-2 # $output1
-
 # set_from_resource $layout0 i3.output.0.layout tabbed
 # set_from_resource $layout1 i3.output.1.layout tabbed
 # set_from_resource $layout2 i3.output.2.layout splith
@@ -39,3 +35,5 @@ workspace 15    output $output3 $output2 $output1
 workspace 16    output $output3 $output2 $output1
 workspace 17    output $output3 $output2 $output1
 workspace 18    output $output3 $output2 $output1
+workspace 19    output $output3 $output2 $output1
+workspace 20    output $output3 $output2 $output1

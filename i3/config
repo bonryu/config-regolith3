@@ -149,8 +149,9 @@ set_from_resource $i3-wm.bar.workspace.urgent.background.color i3-wm.bar.workspa
 set_from_resource $i3-wm.bar.workspace.urgent.text.color i3-wm.bar.workspace.urgent.text.color "#fdf6e3"
 
 # Enforce window borders greedily
-for_window [class="^.*"] border pixel 2
-
+# for_window [class="^.*"] border pixel 2
+# Add border around gtk apps as well.
+for_window [class=.*] border pixel 2
 
 # Sets i3 font for dialogs
 set_from_resource $i3-wm.font gtk.font_name Sans 13
@@ -207,5 +208,3 @@ bindsym $mod+$i3-wm.binding.exit_app [con_id="__focused__"] kill
 bindsym $alt+Ctrl+Shift+m exec /home/bonryu/scripts/bin/switchmonitors.sh
 bindsym $alt+Ctrl+Shift+x exec /home/bonryu/scripts/bin/xsetwacom.sh
 exec_always /home/bonryu/scripts/bin/xsetwacom.sh
-
-
