@@ -175,12 +175,28 @@ bindsym $mod+Ctrl+$ws10_key workspace number $ws20
 
 include $HOME/.config/regolith2/i3/map_workspace2display
 
+focus_wrapping force
+
 ## Navigate // focus to another screen
 bindsym $mod+$alt+j focus output down
 bindsym $mod+$alt+k focus output up
 bindsym $mod+$alt+h focus output left
 bindsym $mod+$alt+l focus output right
-# bindsym $mod+$alt+< focus previous output
+
+bindsym $mod+x focus output next 
+
+## Navigate // focus next/previous window
+bindsym $mod+n focus next
+bindsym $mod+p focus prev
+
+## Navigate // cycle between parents 
+bindsym $alt+Tab focus parent; focus next
+bindsym $alt+Shift+Tab focus parent; focus prev
+bindsym $mod+semicolon focus parent; focus next
+bindsym $mod+Shift+semicolon focus parent; focus prev
+
+## Navigate // Next Workspace (mod+alt+h/l similar to default mod+alt+left/right)
+## Can't do this becuase I already have mod+alt+h/l bound to go to next output (aka monitor), and can't do mod+ctrl+h/l because those are bound to next/prev workspace on output, already.
 
 ## Modify // Carry focused container to another screen
 bindsym $mod+$alt+Shift+j move container to output down; focus output down
