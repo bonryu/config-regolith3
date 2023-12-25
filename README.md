@@ -1,2 +1,3 @@
-# config-regolith2
-.config/regolith2 directory
+# config-regolith3
+
+.config/regolith3 directory
