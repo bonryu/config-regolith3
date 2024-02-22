@@ -1,9 +1,9 @@
 wm.bar.position: bottom
 wm.window.border.size: 3
 wm.gaps.inner.size: 10
-regolith.wallpaper.file: /usr/share/backgrounds/Lobster_Wallpaper.png
+regolith.wallpaper.file: /usr/share/backgrounds/mantic-final-ubuntu.png.png
 regolith.wallpaper.options: zoom
-regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/Lobster_Wallpaper.png
+regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/mantic-final-ubuntu.png.png
 regolith.lockscreen.wallpaper.options: zoom
 wm.binding.look_selector: m
 
@@ -12,4 +12,5 @@ i3xrocks.date.format2: %A %m/%d %I:%M
 wm.resize.small: 3
 wm.resize.large: 12
 
+!regolith.look.path: /usr/share/regolith-look/default
 regolith.look.path: /usr/share/regolith-look/default
